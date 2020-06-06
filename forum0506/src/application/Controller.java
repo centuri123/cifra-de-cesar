@@ -40,7 +40,7 @@ public class Controller {
 	}
 	
 	@FXML 
-	protected void btnDecifrar() {
+	protected void btnDecifrar(ActionEvent event) {
 		StringBuilder textoInput      = new StringBuilder(this.inputCifrar.getText().toLowerCase());
 		StringBuilder textoModificado = new StringBuilder();
 		
