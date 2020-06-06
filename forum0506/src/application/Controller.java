@@ -1,6 +1,5 @@
 package application;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -13,7 +12,7 @@ public class Controller {
 	@FXML protected TextField inputPulo;
 	
 	@FXML
-	protected void btnCifrar(ActionEvent event) {
+	protected void btnCifrar() {
 		StringBuilder textoInput      = new StringBuilder(this.inputCifrar.getText().toLowerCase());
 		StringBuilder textoModificado = new StringBuilder();
 		
@@ -40,7 +39,7 @@ public class Controller {
 	}
 	
 	@FXML 
-	protected void btnDecifrar(ActionEvent event) {
+	protected void btnDecifrar() {
 		StringBuilder textoInput      = new StringBuilder(this.inputCifrar.getText().toLowerCase());
 		StringBuilder textoModificado = new StringBuilder();
 		
